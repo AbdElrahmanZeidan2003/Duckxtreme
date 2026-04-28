@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UFT-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Duckxtreme</title>
-        <style>
-            body{
-                background: rgb(168, 222, 168);
-                color: pink;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            header{
-                background: rgb(229, 160, 160);
-                padding: 20px;  
-            }section{
-                background: rgb(45, 138, 238);
-                padding: 20px;
-                display: flex;
-                flex-direction: row;
-            }sectoin{
-                background: rgb(243, 97, 221);
-                padding: 20px   ;
-            }div{
-                margin:auto;
-                width: 100px;
-            }ul{
-                display: flex;
-                flex-direction: row;
-                list-style-type: none;
-            }li{
-                display: inline-block;
-                margin: 0px 10px;
-            }footer{
-                background: rgb(242, 242, 120);
-                padding: 10px 20px;
-            }
-        </style>
-    </head>
-    <body>  
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duckxtreme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="picture/Logo.png" alt="DuckXtreme Logo">
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="locations.html">About</a></li>
+                    <li><a href="shop.html">Store</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="account.html">Account</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Duckxtreme</h1>
-        </header>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-    </section>
-        <sectoin>lower-sectoin</sectoin>
-        <footer>footer</footer> 
-    </body>
-    </html>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <h1>Welcome to Duckxtreme!</h1>
+                <p>Discover the ultimate duck shopping experience. Shop cute, colorful, glittery, and collectible mini ducks.</p>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+
+            <div class="col-2">
+                <img src="picture/duckOfducks.jpeg" class="hero-img" alt="Duck of Ducks">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
