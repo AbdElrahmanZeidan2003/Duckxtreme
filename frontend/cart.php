@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Store</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="cart.php">Cart</a></li>
                 <li><a href="account.html">Login/Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -27,14 +27,15 @@
 
     <h1 class="page-title">Shopping Cart</h1>
 
-    <div id="cart-items"></div>
-
+    <div id="cart-items">
+        <?php include "display_cart.php"; ?>
+    </div>
+    
     <h2 class="cart-total">Total: $<span id="total">0.00</span></h2>
 
     <button class="checkout-btn">Checkout</button>
 
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>

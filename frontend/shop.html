@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Store</a></li>
-                <li><a href="cart.html">Cart</a></li>
+                <li><a href="cart.php">Cart</a></li>
                 <li><a href="account.html">Login/Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -34,48 +34,71 @@
             <img src="picture/glitter.jpeg">
             <h3>Gold Glitter Duck</h3>
             <p>$3.99</p>
-            <button onclick="addToCart('Gold Glitter Duck', 3.99)">Add to Cart</button>
+            <form action="add_cart.php" method="POST">
+                <input type="hidden" name="product_id" value="1">
+                <input type="hidden" name="price" value="3.99">
+                <button type="submit">Add to Cart</button>
+            </form>
         </div>
 
         <div class="product-card">
             <img src="picture/duckOfducks.jpeg">
             <h3>Duck of Ducks</h3>
             <p>$7.99</p>
-            <button onclick="addToCart('Duck of Ducks', 7.99)">Add to Cart</button>
+            <form action="add_cart.php" method="POST">
+                <input type="hidden" name="product_id" value="2">
+                <input type="hidden" name="price" value="7.99">
+                <button type="submit">Add to Cart</button>
+            </form>
         </div>
 
         <div class="product-card">
             <img src="picture/many.jpeg">
             <h3>Character Duck Bundle</h3>
             <p>$14.99</p>
-            <button onclick="addToCart('Character Duck Bundle', 14.99)">Add to Cart</button>
+            <form action="add_cart.php" method="POST">
+                <input type="hidden" name="product_id" value="3">
+                <input type="hidden" name="price" value="14.99">
+                <button type="submit">Add to Cart</button>
+            </form>
         </div>
 
         <div class="product-card">
             <img src="picture/manyglit.jpeg">
             <h3>Glitter Duck Bundle</h3>
             <p>$9.99</p>
-            <button onclick="addToCart('Glitter Duck Bundle', 9.99)">Add to Cart</button>
+            <form action="add_cart.php" method="POST">
+                <input type="hidden" name="product_id" value="4">
+                <input type="hidden" name="price" value="9.99">
+                <button type="submit">Add to Cart</button>
+            </form>
         </div>
 
         <div class="product-card">
             <img src="picture/peach.jpeg">
             <h3>Peach Duck</h3>
             <p>$3.49</p>
-            <button onclick="addToCart('Peach Duck', 3.49)">Add to Cart</button>
+            <form action="add_cart.php" method="POST">
+                <input type="hidden" name="product_id" value="5">
+                <input type="hidden" name="price" value="3.49">
+                <button type="submit">Add to Cart</button>
+            </form>
         </div>
 
         <div class="product-card">
             <img src="picture/pearl.jpeg">
             <h3>Pearl Crown Duck</h3>
             <p>$4.99</p>
-            <button onclick="addToCart('Pearl Crown Duck', 4.99)">Add to Cart</button>
+            <form action="add_cart.php" method="POST">
+                <input type="hidden" name="product_id" value="6">
+                <input type="hidden" name="price" value="4.99">
+                <button type="submit">Add to Cart</button>
+            </form>
         </div>
 
     </div>
 
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
