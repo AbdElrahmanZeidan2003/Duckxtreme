@@ -11,7 +11,7 @@
 
     <div class="navbar">
         <div class="logo">
-            <img src="picture/Logo.png" alt="DuckXtreme Logo">
+            <img src="picture/nLogo.png" alt="DuckXtreme Logo">
         </div>
 
         <nav>
