@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +19,17 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="shop.html">Store</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="account.html">Account</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+
+                    <?php if (isset($_SESSION['customer_id'])): ?>
+                        <li>Welcome, <?php echo htmlspecialchars($_SESSION['user']); ?>!</li>
+                        <li><a href="logout.php">Logout</a></li>
+                    <?php else: ?>
+                        <li><a href="account.html">Login/Register</a></li>
+                    <?php endif; ?>
+
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>

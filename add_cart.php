@@ -49,6 +49,6 @@ if ($result->num_rows > 0) {
     $stmt->execute();
 }
 
-header("Location: cart.php");
+header("Location: shop.html");
 exit();
 ?>

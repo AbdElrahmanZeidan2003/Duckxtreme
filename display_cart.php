@@ -24,7 +24,7 @@ $cart_id = $result->fetch_assoc()['cart_id'];
 
 // get items
 $sql = "
-SELECT CartItem.cart_item_id, Product.product_name, Product.price, CartItem.quantity
+SELECT CartItem.cart_item_id, Product.product_name, Product.price, CartItem.quantity, Product.image
 FROM CartItem
 JOIN Product ON CartItem.product_id = Product.product_id
 WHERE CartItem.cart_id = ?
@@ -45,12 +45,15 @@ $total = 0;
     $total += $subtotal;
 ?>
 
-<div>
-    <h3><?php echo $row['product_name']; ?></h3>
+
+<div class="cart-item" style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+    <img src="<?php echo $row['image']; ?>" 
+     alt="<?php echo $row['product_name']; ?>" 
+     width="100">
     <p>$<?php echo $row['price']; ?> x <?php echo $row['quantity']; ?></p>
     <p>Subtotal: $<?php echo number_format($subtotal, 2); ?></p>
 
-    <form action="remove_item.php" method="POST">
+    <form action="remove_cart.php" method="POST">
         <input type="hidden" name="cart_item_id" value="<?php echo $row['cart_item_id']; ?>">
         <button type="submit">Remove</button>
     </form>

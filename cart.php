@@ -16,7 +16,7 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="shop.html">Store</a></li>
                 <li><a href="cart.php">Cart</a></li>
                 <li><a href="account.html">Login/Register</a></li>
@@ -31,7 +31,7 @@
         <?php include "display_cart.php"; ?>
     </div>
     
-    <h2 class="cart-total">Total: $<span id="total">0.00</span></h2>
+    <h2 class="cart-total">Total: $<?php echo number_format($total, 2); ?></h2>
 
     <button class="checkout-btn">Checkout</button>
 
