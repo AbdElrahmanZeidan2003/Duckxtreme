@@ -30,7 +30,6 @@
                         <li><a href="account.html">Login/Register</a></li>
                     <?php endif; ?>
 
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>

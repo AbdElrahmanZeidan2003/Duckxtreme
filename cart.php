@@ -20,7 +20,6 @@
                 <li><a href="shop.html">Store</a></li>
                 <li><a href="cart.php">Cart</a></li>
                 <li><a href="account.html">Login/Register</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
